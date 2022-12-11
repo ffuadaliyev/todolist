@@ -1,130 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+.wrap{
+    width: 100%;
 }
-.container {
-  width: 100%;
+.container{
+    width: 336px;
+    height: auto;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin: 0 auto;
 }
-header {
-  width: 100%;
-  background-color: #f5f5f6;
-  font-size: 12px;
+header{
+    height: 28px;
+    width: 100%;
+    background-color: #FFDC40;
+    border-radius: 10px 10px 0 0;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  height: 50px;
-  margin: 0 auto;
-  align-items: center;
+main{
+    width: 90%;
+    margin: 0 auto;
 }
-nav .menu {
-  width: 630px;
+.title{
+    text-align: center;
 }
-nav .menu ul {
-  display: flex;
-  list-style: none;
+.sort{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
 }
-nav .menu ul li:not(:last-child) {
-  margin-right: 20px;
+#sort_up{
+    display: none;
 }
-nav .menu ul li a {
-  text-decoration: none;
-  color: #959ba4;
+#sort_up:hover{
+    color:black;
 }
-nav .menu ul li a:hover {
-  color: #000000;
-  transform: scale(1.5);
+#sort_down:hover{
+    color:black;
 }
-nav .menu ul li:hover {
-  transform: scale(1.1);
+iconify-icon{
+    font-size: 25px;
+    color:#C4C4C4;
 }
-nav .login button {
-  width: 58px;
-  height: 33px;
-  background-color: #ffffff;
-  border: none;
-  font-size: 12px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 1s;
+.save_box iconify-icon:hover{
+    color: #833AE0;
 }
-nav .login button:hover {
-  transform: scale(1.1);
+.save_box{
+    max-height: 200px;
+    overflow:auto;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 5px 0 15px 0;
 }
-.convertor {
-  display: flex;
-  flex-wrap: wrap;
-  width: 39%;
-  margin: 0 auto;
+.add_box{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 5px;
 }
-.convertor_head {
-  width: 100%;
-  margin-bottom: 33px;
-  margin-top: 60px;
+
+.add_box input{
+    border: none;
+    width: 84%;
+    height: 40px;
+    margin-right: 10px;
 }
-.convertor_boxes{
+.lists{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.lists .list{
+    display: flex;
+    width: 95%;
+    height: 30px;
+}
+.lists .list .list_item{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0 10px;
 }
-.currency_select {
-  display: flex;
-  width: 260px;
-  margin-top: 10px;
-}
-.left,.right p{
-    color: #9F9F9F;
-    font-size: 12px;
-}
-.btn_currency {
-  width: 65px;
-  height: 30px;
-  color: #c6c6c6;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  cursor: pointer;
-}
-.btn_currency:hover {
-  background-color: #833ae0;
-  color: white;
-}
-.currency_box {
-  width: 259px;
-  height: 102px;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
-  margin-top: 20px;
-}
-.currency_box input::-webkit-inner-spin-button{
-    -webkit-appearance: none;
-}
-#out_currency{
-    height: 70px;
+.txt_div{
     width: 100%;
-    font-size: 36px;
-    margin: 0;
-    padding: 15px;
-    overflow: hidden;
 }
-.currency_box input{
-  height: 70px;
-  width: 100%;
-  font-size: 36px;
-  border: none;
-  padding-left: 15px;
+.lists .list:not(:last-child){
+    margin-bottom: 15px;
+}
 
+.btn{
+    display: flex;
+    justify-content: center;
 }
-.currency_box input:focus {
-  outline: none;
+.add_btn{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height: 42px;
+    margin: 17px 0;
 }
-.currency_box div {
-  width: 130px;
-  height: 28px;
-  font-size: 12px;
-  color: #c6c6c6;
-  margin-left: 16px;
+.plus{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #9953F1;
+    color:white;
+    font-weight: bold;
+}.add_btn button{
+    color: white;
+    width: 100%;
+    background-color: #833AE0;
+    border-radius: 71px;
+    border: none;
+}
+.add_btn:hover{
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
 }

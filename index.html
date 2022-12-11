@@ -4,76 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
     <link rel="stylesheet" href="./style.css" />
-    <title>Valyuta</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav>
-          <div class="logo">
-            <a href="#">
-              <img src="./img/bank_logo.svg" alt="logo" />
-            </a>
+    <div class="wrap">
+      <div class="container">
+        <header></header>
+        <main>
+          <div class="title">
+            <h1>To-do list</h1>
           </div>
-          <div class="menu">
-            <ul>
-              <li><a href="">БАНК</a></li>
-              <li><a href="">БИЗНЕС</a></li>
-              <li><a href="">ИНВЕСТИЦИИ</a></li>
-              <li><a href="">СТРАХОВАНИЕ</a></li>
-              <li><a href="">МОБАЙЛ</a></li>
-              <li><a href="">ПУТЕШЕСТВИЯ</a></li>
-              <li><a href="">РАЗВЛЕЧЕНИЯ</a></li>
-            </ul>
+          <div class="sort">
+            <iconify-icon id="sort_down" icon="lucide:sort-desc"></iconify-icon>
+            <iconify-icon id="sort_up" icon="lucide:sort-asc"></iconify-icon>
           </div>
-          <div class="login">
-            <button>ВОЙТИ</button>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <div class="convertor">
-          <div class="convertor_head">
-            <h1>Конвертер валют онлайн</h1>
-          </div>
-          <div class="convertor_boxes">
-            <div class="left">
-                <p>У меня есть </p>
-                <div class="currency_select">
-                    
-                    <input class="btn_currency" type="button" value="RUB">
-                    <input class="btn_currency" type="button" value="USD">
-                    <input class="btn_currency" type="button" value="EUR">
-                    <input class="btn_currency" type="button" value="GBP">
-                </div>
-                <div class="currency_box">
-                    <input type="number" id="in_currency">
-                    <div>
-                        <p id="first_currency"></p>
-                    </div>
-                </div>
+          <div class="save_box" dropzone="true">
+            <div class="add_box" draggable="true">
+              <input type="text" placeholder="New item 1" />
+              <iconify-icon
+                id="inp_0"
+                icon="bi:x-circle"
+                onmouseover="circle('bi:x-circle-fill')"
+                onmouseout="circle('bi:x-circle')"
+              ></iconify-icon>
             </div>
-            <div class="right">
-                <p>Хочу приобрести</p>
-                <div class="currency_select">
-                    <input class="btn_currency" type="button" value="RUB">
-                    <input class="btn_currency" type="button" value="USD">
-                    <input class="btn_currency" type="button" value="EUR">
-                    <input class="btn_currency" type="button" value="GBP">
-                </div>
-                <div class="currency_box">
-                    <input type="number" id="out_currency">
-                    <div>
-                        <p id="second_currency">1 USD = 73.8896 RUB</p>
-                    </div>
-                </div>
+        
+          </div>
+          <div class="btn">
+            <div class="add_btn">
+              <div class="plus"><div>+</div></div>
+              <button>Add</button>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
-
-    <script src="./script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="./script.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="./icon.js"></script>
+    <script src="./drag.js"></script>
   </body>
 </html>
